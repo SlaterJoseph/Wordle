@@ -45,6 +45,8 @@ GIF created with Licecap
 
 I encountered a few challenegs creating this app. First I wanted each letter to be its own square, so figuring out a system to cleanly edit all squares took some time. Second, setting up the button to respond to both submit and reset took a while. Finally building components like the border for the tiles and the different tiles for the different outcomes took a while.
 
+I planned on adding a feauture to toggle between light and dark modes, but I ran into many issues so I scrapped it for now. I plan to work on this later and implemenet it at that time.
+
 ## License
 
     Copyright [2022] [Joseph Slater]
