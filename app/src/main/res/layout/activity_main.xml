@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/InputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="48dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:hint="@string/guess"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/SelectedWord"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/WordleTitle"
+        android:layout_width="228dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/wordle"
+        android:textColor="@color/eerie_black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/SelectedWord"
+        android:layout_width="214dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="76dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/eerie_black"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/InputText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="330dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/InputText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WordleTitle"
+        app:layout_constraintVertical_bias="0.145">
+
+        <LinearLayout
+            android:id="@+id/Attempt1"
+            android:layout_width="400dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/Letter1.1"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Letter1.2"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Letter1.3"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Letter1.4"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Attempt2"
+            android:layout_width="400dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/Letter2.1"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Letter2.2"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Letter2.3"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Letter2.4"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Attempt3"
+            android:layout_width="400dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/Letter3.1"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Letter3.2"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Letter3.3"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Letter3.4"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/eerie_black"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/modeSwitch"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/theme_button"
+        app:layout_constraintBottom_toTopOf="@+id/WordleTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toEndOf="@+id/InputText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <TextView
+        android:id="@+id/streak"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="231dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/streak"
+        android:gravity="center"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/eerie_black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/WordleTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
