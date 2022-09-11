@@ -35,7 +35,7 @@ Here's a walkthrough of implemented user stories:
 <img src='Wordle.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with Licecap  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -43,7 +43,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I encountered a few challenegs creating this app. First I wanted each letter to be its own square, so figuring out a system to cleanly edit all squares took some time. Second, setting up the button to respond to both submit and reset took a while. Finally building components like the border for the tiles and the different tiles for the different outcomes took a while.
 
 ## License
 
