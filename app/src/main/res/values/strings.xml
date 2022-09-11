@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Wordle</string>
+    <string name="app_name">Wordle-Lite</string>
     <string name="guess">Guess</string>
-    <string name="wordle">Wordle</string>
+    <string name="wordle">Wordle-Lite</string>
     <string name="solution">holder</string>
     <string name="themeType">Day</string>
     <string name="submit">Submit</string>
